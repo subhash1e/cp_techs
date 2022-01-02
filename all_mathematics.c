@@ -1,6 +1,8 @@
 #include<stdio.h>
 #include<math.h>
 
+//full of bugs
+
     void countDigit(int n)
      {
      	int count=0,p=n;
@@ -94,11 +96,11 @@
             
 		}
 		
-		findHcf(int a, int b)
+		int findHcf(int a, int b)
 		{
 		//	2,4 cf  is  2
 			int res =  min(a,b);
-			return res;
+			
 			while(res>0)
 			{
 				if(a%res==0&&b%res==0)
@@ -106,17 +108,20 @@
 				else
 				res--;
 			}
+			return res;
 			
 			
 		}
 		
-		findHcfv2(int a, int b)
+		int findHcfv2(int a, int b)
 		{
 		// eulers method
-		if(a>b)
-		return findHcfv2(a, a%b);
+			
+		if(b==0)
+		return a;
 		else
-		return findHcfv2(b, b%a);
+		return findHcfv2(b, a%b);
+			// if b>a -> a%b==a else allright
 		
 			
 		}
