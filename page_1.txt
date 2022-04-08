@@ -117,4 +117,7 @@ a forest of trees was apparently first described
 by Galler and Fisher in 1964 (Galler, Fisher, 
 "An Improved Equivalence Algorithm)
 , however the complete analysis of the time complexity was conducted much later.
+_____________________________________________________
+https://cp-algorithms.com/data_structures/disjoint_set_union.html
+
 
